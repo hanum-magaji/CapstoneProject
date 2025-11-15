@@ -1,0 +1,36 @@
+.app-header {
+  background-color: #ffffff;
+  padding: 0 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #d93025;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #a5271f;
+}
