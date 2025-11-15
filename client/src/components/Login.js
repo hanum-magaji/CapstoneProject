@@ -9,7 +9,7 @@ function Login({ onLoginSuccess, onShowSignUp }) {
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
-    if (email === 'hanum@example.com' && password === 'password123') {
+    if (email === 'hanum@example.com' && password === 'hanum123') {
       console.log('Login successful for:', email);
       setError('');
       onLoginSuccess();
