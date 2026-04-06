@@ -1,0 +1,186 @@
+/* ---- PAGE LAYOUT ---- */
+.requirements-page {
+  padding: 4rem 6vw;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  min-height: 100vh;
+}
+
+.req-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #818cf8;
+  margin: 0;
+}
+
+.req-lead {
+  margin: -1.25rem 0 0;
+  color: #8b8ba8;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 520px;
+}
+
+/* ---- AI ASSISTANT ---- */
+.ai-assistant {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ai-assistant textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.ai-button {
+  width: 150px;
+  align-self: flex-start;
+}
+
+/* ---- ADD REQUIREMENT FORM ---- */
+.add-requirement-container {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-requirement-container input,
+.add-requirement-container select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.add-requirement-container .requirement-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.add-requirement-container .primary-button {
+  margin-top: 1rem;
+  width: 150px;
+  align-self: flex-start;
+}
+
+/* ---- REQUIREMENTS LIST ---- */
+.requirements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.requirement-card {
+  background: #1c1c1c;
+  padding: 1.6rem;
+  border-radius: 12px;
+  border: 1px solid #2d2d2d;
+  box-shadow: 0 0 12px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.requirement-text {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.requirement-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.priority-badge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.p-1 { background: #e53935; }
+.p-2 { background: #ffb300; color: #000; }
+.p-3 { background: #43a047; }
+
+.status-toggle {
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.req-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.status-toggle.done {
+  background: #43a047;
+}
+
+.delete-button {
+  background: #550000;
+  color: #ffbaba;
+  border: 1px solid #770000;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  max-width: 10%;
+}
+
+.delete-button:hover {
+  background: #770000;
+}
+
+/* ---- MISC ---- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delayed-1 { animation-delay: 0.1s; }
+.delayed-2 { animation-delay: 0.2s; }
+.delayed-3 { animation-delay: 0.3s; }

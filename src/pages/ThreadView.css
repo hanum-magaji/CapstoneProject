@@ -1,0 +1,131 @@
+.thread-page-container {
+  display: flex;
+  height: 93vh; /* full screen */
+  width: 100%;
+  background: #121212;
+  color: white;
+}
+
+.thread-chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.thread-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.thread-messages-full {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse; /* newest messages at bottom */
+  overflow-y: auto;
+  gap: 0.8rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.msg-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-end;
+}
+
+.my-msg {
+  justify-content: flex-end;
+}
+
+.their-msg {
+  justify-content: flex-start;
+}
+
+.msg-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.msg-bubble {
+  max-width: 70%;
+  background: #2a2a2a;
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.my-msg .msg-bubble {
+  background: #4f46e5;
+  border-radius: 12px 12px 0 12px;
+}
+
+.their-msg .msg-bubble {
+  background: #1c1c1c;
+  border-radius: 12px 12px 12px 0;
+}
+
+.msg-user {
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.msg-text {
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.msg-time {
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-align: right;
+}
+
+.thread-input-full {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.thread-input-full input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: white;
+}
+
+.thread-input-full input:focus {
+  outline: none;
+  border-color: #6d63ff;
+}
+
+.thread-input-full .primary-button {
+  padding: 0 1.5rem;
+  background: #4f46e5;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.thread-input-full .primary-button:hover {
+  background: #6d63ff;
+}
+.thread-messages-full {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column; /* ensure top-to-bottom layout */
+  gap: 0.5rem;
+  padding: 1rem;
+}
+

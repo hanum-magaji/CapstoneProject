@@ -1,0 +1,116 @@
+.dashboard-container {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 4rem 6vw;
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Header */
+.dashboard-header {
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.dashboard-subtitle {
+  margin-top: 0.75rem;
+  color: #b5b5b5;
+  font-size: 1.2rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.6rem;
+}
+
+.stat-card {
+  background: #1a1a1a;
+  border: 1px solid #222;
+  padding: 2rem;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: #4f46e5;
+}
+
+.stat-card h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: #cfcfcf;
+  margin-top: 6px;
+}
+
+/* Recent Projects */
+.recent-projects-section {
+  margin-top: 1rem;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.recent-header h2 {
+  font-size: 1.9rem;
+}
+
+.recent-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+/* Reuse your existing project-card styling */
+.project-card {
+  background: #1a1a1a;
+  border: 1px solid #222;
+  padding: 1.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.55);
+  border-color: #4f46e5;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,142 @@
+/* ---- PAGE LAYOUT ---- */
+.pricing-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 6vw;
+  color: white;
+  box-sizing: border-box;
+}
+
+.pricing-inner {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---- HEADER ---- */
+.pricing-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+  color: #b5b5b5;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+/* ---- GRID ---- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ---- CARD ---- */
+.pricing-card {
+  padding: 2.2rem;
+  border-radius: 14px;
+  background: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.3s ease;
+  border: 1px solid #222;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.55);
+  border-color: #4f46e5;
+}
+
+/* Light cards (Free + Enterprise) */
+.light-card {
+  background: #1e1e1e;
+}
+
+/* Pro card */
+.pro-card {
+  background: #4f46e5;
+  border-color: #4f46e5;
+}
+
+/* ---- TEXT ---- */
+.plan-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.plan-price {
+  font-size: 1.35rem;
+  margin-bottom: 1.3rem;
+  color: #cfcfcf;
+}
+
+.light-text {
+  color: white !important;
+}
+
+/* ---- FEATURES LIST ---- */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.7rem;
+  color: #cfcfcf;
+  text-align: left;
+  line-height: 1.65;
+}
+
+/* ---- BUTTONS ---- */
+.plan-button {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+  border: none;
+}
+
+/* Primary button */
+.primary-button {
+  background: #4f46e5;
+  color: white;
+}
+
+.primary-button:hover {
+  background: #3730a3;
+}
+
+/* White button (Pro plan) */
+.white-button {
+  background: white;
+  color: #4f46e5;
+}
+
+.white-button:hover {
+  background: #e4e4e4;
+}
+
+/* ---- ANIMATIONS ---- */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

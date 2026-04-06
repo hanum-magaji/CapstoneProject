@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.viz-page {
+  min-height: calc(100vh - 72px);
+  padding: 2rem 2.5rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #080810;
+  color: #f0f0f8;
+  box-sizing: border-box;
+}
+
+.viz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.viz-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #818cf8;
+  margin: 0 0 0.35rem;
+}
+
+.viz-title {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.viz-subtitle {
+  margin: 0.5rem 0 0;
+  color: #8b8ba8;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 520px;
+}
+
+.viz-count {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.viz-muted {
+  color: #8b8ba8;
+}
+
+.viz-empty {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 2.5rem;
+  text-align: center;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+.viz-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.viz-column-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  color: #e4e4e7;
+}
+
+.viz-column-count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #71717a;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.viz-cards {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.viz-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  border-left: 3px solid #6366f1;
+}
+
+.viz-card-text {
+  margin: 0 0 0.65rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #f4f4f5;
+}
+
+.viz-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: #a1a1aa;
+}
+
+.viz-tag {
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.12);
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .viz-page {
+    padding: 1.25rem;
+  }
+}

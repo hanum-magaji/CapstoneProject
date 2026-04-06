@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.project-sidebar {
+  width: 220px;
+  padding: 2rem 1.25rem;
+  background: #080810;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.project-sidebar-title {
+  color: #8b8ba8;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.side-item {
+  color: #c4c4d4;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.5rem 0.55rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.side-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: #f0f0f8;
+}
+
+.side-item.active {
+  background: rgba(99, 102, 241, 0.18);
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+.sidebar-section-label {
+  color: #52525b;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  margin-bottom: -0.25rem;
+  padding: 0 0.55rem;
+}

@@ -1,0 +1,367 @@
+{
+  "timestamp": "2026-03-21T07:35:18.272644",
+  "dataset_size": 60,
+  "ground_truth_clusters": 6,
+  "embedding_method": "TF-IDF (bigrams) \u2014 production uses OpenAI text-embedding-3-small",
+  "our_algorithm": {
+    "ari": 0.124,
+    "silhouette": 0.09,
+    "avg_precision": 0.84,
+    "avg_recall": 0.17,
+    "avg_f1": 0.27,
+    "purity": 0.767,
+    "n_clusters": 27,
+    "cluster_details": {
+      "0": {
+        "matched": "real_time_info",
+        "matched_label": "Real-time Information Systems",
+        "size": 7,
+        "precision": 0.429,
+        "recall": 0.3,
+        "f1": 0.353
+      },
+      "1": {
+        "matched": "accessibility",
+        "matched_label": "Accessibility & Universal Design",
+        "size": 3,
+        "precision": 0.333,
+        "recall": 0.1,
+        "f1": 0.154
+      },
+      "2": {
+        "matched": "route_optimization",
+        "matched_label": "Route Optimization & Efficiency",
+        "size": 4,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.571
+      },
+      "3": {
+        "matched": "fare_payment",
+        "matched_label": "Fare & Payment Systems",
+        "size": 3,
+        "precision": 1.0,
+        "recall": 0.3,
+        "f1": 0.462
+      },
+      "4": {
+        "matched": "accessibility",
+        "matched_label": "Accessibility & Universal Design",
+        "size": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333
+      },
+      "5": {
+        "matched": "route_optimization",
+        "matched_label": "Route Optimization & Efficiency",
+        "size": 4,
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.571
+      },
+      "6": {
+        "matched": "safety_security",
+        "matched_label": "Safety & Security",
+        "size": 4,
+        "precision": 0.75,
+        "recall": 0.3,
+        "f1": 0.429
+      },
+      "7": {
+        "matched": "route_optimization",
+        "matched_label": "Route Optimization & Efficiency",
+        "size": 2,
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.167
+      },
+      "8": {
+        "matched": "fare_payment",
+        "matched_label": "Fare & Payment Systems",
+        "size": 2,
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.167
+      },
+      "9": {
+        "matched": "comfort_amenities",
+        "matched_label": "Comfort & Amenities",
+        "size": 3,
+        "precision": 0.667,
+        "recall": 0.2,
+        "f1": 0.308
+      },
+      "10": {
+        "matched": "accessibility",
+        "matched_label": "Accessibility & Universal Design",
+        "size": 2,
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.167
+      },
+      "11": {
+        "matched": "real_time_info",
+        "matched_label": "Real-time Information Systems",
+        "size": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333
+      },
+      "12": {
+        "matched": "fare_payment",
+        "matched_label": "Fare & Payment Systems",
+        "size": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333
+      },
+      "13": {
+        "matched": "comfort_amenities",
+        "matched_label": "Comfort & Amenities",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "14": {
+        "matched": "safety_security",
+        "matched_label": "Safety & Security",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "15": {
+        "matched": "fare_payment",
+        "matched_label": "Fare & Payment Systems",
+        "size": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333
+      },
+      "16": {
+        "matched": "comfort_amenities",
+        "matched_label": "Comfort & Amenities",
+        "size": 4,
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.286
+      },
+      "17": {
+        "matched": "real_time_info",
+        "matched_label": "Real-time Information Systems",
+        "size": 2,
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.167
+      },
+      "18": {
+        "matched": "comfort_amenities",
+        "matched_label": "Comfort & Amenities",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "19": {
+        "matched": "comfort_amenities",
+        "matched_label": "Comfort & Amenities",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "20": {
+        "matched": "accessibility",
+        "matched_label": "Accessibility & Universal Design",
+        "size": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333
+      },
+      "21": {
+        "matched": "safety_security",
+        "matched_label": "Safety & Security",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "22": {
+        "matched": "real_time_info",
+        "matched_label": "Real-time Information Systems",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "23": {
+        "matched": "comfort_amenities",
+        "matched_label": "Comfort & Amenities",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "24": {
+        "matched": "accessibility",
+        "matched_label": "Accessibility & Universal Design",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "25": {
+        "matched": "real_time_info",
+        "matched_label": "Real-time Information Systems",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      "26": {
+        "matched": "route_optimization",
+        "matched_label": "Route Optimization & Efficiency",
+        "size": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      }
+    }
+  },
+  "baseline_kmeans": {
+    "ari": 0.054,
+    "silhouette": 0.03,
+    "avg_precision": 0.428,
+    "avg_recall": 0.4,
+    "avg_f1": 0.377,
+    "purity": 0.4,
+    "n_clusters": 6,
+    "cluster_details": {
+      "0": {
+        "matched": "accessibility",
+        "matched_label": "Accessibility & Universal Design",
+        "size": 3,
+        "precision": 0.667,
+        "recall": 0.2,
+        "f1": 0.308
+      },
+      "1": {
+        "matched": "route_optimization",
+        "matched_label": "Route Optimization & Efficiency",
+        "size": 18,
+        "precision": 0.444,
+        "recall": 0.8,
+        "f1": 0.571
+      },
+      "2": {
+        "matched": "safety_security",
+        "matched_label": "Safety & Security",
+        "size": 13,
+        "precision": 0.308,
+        "recall": 0.4,
+        "f1": 0.348
+      },
+      "3": {
+        "matched": "fare_payment",
+        "matched_label": "Fare & Payment Systems",
+        "size": 7,
+        "precision": 0.429,
+        "recall": 0.3,
+        "f1": 0.353
+      },
+      "4": {
+        "matched": "fare_payment",
+        "matched_label": "Fare & Payment Systems",
+        "size": 13,
+        "precision": 0.385,
+        "recall": 0.5,
+        "f1": 0.435
+      },
+      "5": {
+        "matched": "real_time_info",
+        "matched_label": "Real-time Information Systems",
+        "size": 6,
+        "precision": 0.333,
+        "recall": 0.2,
+        "f1": 0.25
+      }
+    }
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.15,
+      "n_clusters": 27,
+      "ari": 0.124,
+      "silhouette": 0.09,
+      "avg_f1": 0.27,
+      "purity": 0.767
+    },
+    {
+      "threshold": 0.2,
+      "n_clusters": 34,
+      "ari": 0.072,
+      "silhouette": 0.101,
+      "avg_f1": 0.236,
+      "purity": 0.8
+    },
+    {
+      "threshold": 0.25,
+      "n_clusters": 37,
+      "ari": 0.062,
+      "silhouette": 0.093,
+      "avg_f1": 0.224,
+      "purity": 0.817
+    },
+    {
+      "threshold": 0.3,
+      "n_clusters": 42,
+      "ari": 0.047,
+      "silhouette": 0.086,
+      "avg_f1": 0.214,
+      "purity": 0.867
+    },
+    {
+      "threshold": 0.35,
+      "n_clusters": 44,
+      "ari": 0.035,
+      "silhouette": 0.078,
+      "avg_f1": 0.206,
+      "purity": 0.867
+    },
+    {
+      "threshold": 0.4,
+      "n_clusters": 50,
+      "ari": 0.031,
+      "silhouette": 0.058,
+      "avg_f1": 0.199,
+      "purity": 0.933
+    },
+    {
+      "threshold": 0.45,
+      "n_clusters": 51,
+      "ari": 0.033,
+      "silhouette": 0.057,
+      "avg_f1": 0.199,
+      "purity": 0.95
+    },
+    {
+      "threshold": 0.5,
+      "n_clusters": 52,
+      "ari": 0.027,
+      "silhouette": 0.054,
+      "avg_f1": 0.196,
+      "purity": 0.95
+    },
+    {
+      "threshold": 0.55,
+      "n_clusters": 56,
+      "ari": 0.01,
+      "silhouette": 0.027,
+      "avg_f1": 0.187,
+      "purity": 0.967
+    }
+  ],
+  "note": "Production uses OpenAI embeddings for richer semantic clustering."
+}

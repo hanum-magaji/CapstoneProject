@@ -1,0 +1,175 @@
+/* PAGE LAYOUT */
+.discussion-page,
+.thread-page {
+  padding: 4rem 6vw;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* CREATE THREAD */
+.discussion-create {
+  display: flex;
+  gap: 1rem;
+}
+
+.discussion-create input {
+  flex: 1;
+  padding: 1rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: white;
+}
+
+.discussion-create .primary-button {
+  padding: 0 1.5rem;
+}
+
+/* THREAD LIST */
+.discussion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.discussion-card {
+  background: #1c1c1c;
+  padding: 1.4rem;
+  border-radius: 12px;
+  border: 1px solid #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.discussion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* PINNED STYLE */
+.pinned-thread {
+  background: #4f46e5 !important;
+  border-color: #6d63ff !important;
+}
+
+.discussion-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.discussion-date {
+  opacity: 0.6;
+}
+
+/* SEARCH */
+.discussion-search input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* THREAD ROW LAYOUT */
+.thread-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discussion-left {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+.thread-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.thread-actions button {
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+  padding: 0.4rem 0.55rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.thread-actions button:hover {
+  background: #333;
+}
+
+.pin-tag {
+  margin-left: 6px;
+  opacity: 0.7;
+}
+
+/* MODALS */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #1e1e1e;
+  padding: 2rem;
+  width: 400px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal input {
+  padding: 0.9rem;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: white;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modal.danger {
+  border-color: #772e2e;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #4f46e5;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+  animation: slideIn 0.3s ease-out;
+}
+.dsc-title {
+  font-size: 2rem;
+  font-weight: 700;
+}

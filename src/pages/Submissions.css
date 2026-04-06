@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Requirements (stakeholder submissions) — aligned with Home / auth */
+
+.submissions-page {
+  min-height: 100vh;
+  background: #080810;
+  color: #f0f0f8;
+  padding: 2rem 2.5rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Inter", system-ui, sans-serif;
+  animation: subsPageFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  box-sizing: border-box;
+}
+
+@keyframes subsPageFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.submissions-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #818cf8;
+  margin: 0 0 0.35rem;
+}
+
+.submissions-lead {
+  margin: 0.5rem 0 0;
+  color: #8b8ba8;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  max-width: 520px;
+}
+
+.submissions-loading-text {
+  color: #8b8ba8;
+}
+
+/* Header */
+.submissions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.submissions-header h1 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+  color: #f0f0f8;
+}
+
+.submissions-count {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Generate block */
+.submissions-generate {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.75rem;
+}
+
+.submissions-generate-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: #e4e4e7;
+}
+
+.submissions-generate-hint {
+  font-size: 0.85rem;
+  color: #8b8ba8;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.submissions-generate-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.submissions-generate-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: #a1a1aa;
+}
+
+.submissions-generate-input {
+  width: 5rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #12121a;
+  color: #f4f4f5;
+  font-size: 0.95rem;
+}
+
+.submissions-generate-btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  border: none;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.submissions-generate-btn:hover:not(:disabled) {
+  background: #818cf8;
+  transform: translateY(-1px);
+}
+
+.submissions-generate-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Share link banner */
+.share-link-banner {
+  background: rgba(100, 108, 255, 0.08);
+  border: 1px solid rgba(100, 108, 255, 0.25);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.share-link-label {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.share-link-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.share-link-input {
+  flex: 1;
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.3);
+  color: #e4e4e7;
+  font-size: 0.85rem;
+  font-family: monospace;
+  outline: none;
+  cursor: text;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.share-link-copy {
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background: #646cff;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.share-link-copy:hover {
+  background: #818cf8;
+  transform: translateY(-1px);
+}
+
+.share-link-copy.copied {
+  background: #22c55e;
+}
+
+/* Filters */
+.submissions-filters {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.submissions-search {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--bg-secondary, #12121a);
+  color: var(--text-primary, #ffffff);
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.submissions-search::placeholder {
+  color: var(--text-muted, #71717a);
+}
+
+.submissions-search:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.15);
+}
+
+.submissions-role-filter {
+  padding: 0.65rem 2.5rem 0.65rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--bg-secondary, #12121a);
+  color: var(--text-primary, #ffffff);
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a1a1aa' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.submissions-role-filter:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.15);
+}
+
+.submissions-role-filter option {
+  background: #12121a;
+  color: #ffffff;
+}
+
+/* Empty state */
+.submissions-empty {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--text-secondary, #a1a1aa);
+  backdrop-filter: blur(10px);
+  line-height: 1.6;
+}
+
+/* Submission list */
+.submissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Submission item */
+.submission-item {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 1.25rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(15px);
+  animation: subItemIn 0.4s ease-out forwards;
+}
+
+.submission-item:nth-child(1) { animation-delay: 0.03s; }
+.submission-item:nth-child(2) { animation-delay: 0.06s; }
+.submission-item:nth-child(3) { animation-delay: 0.09s; }
+.submission-item:nth-child(4) { animation-delay: 0.12s; }
+.submission-item:nth-child(5) { animation-delay: 0.15s; }
+.submission-item:nth-child(6) { animation-delay: 0.18s; }
+.submission-item:nth-child(7) { animation-delay: 0.21s; }
+.submission-item:nth-child(8) { animation-delay: 0.24s; }
+.submission-item:nth-child(9) { animation-delay: 0.27s; }
+.submission-item:nth-child(10) { animation-delay: 0.3s; }
+
+@keyframes subItemIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.submission-item:hover {
+  border-color: rgba(100, 108, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.submission-item.clustered {
+  border-left: 3px solid #646cff;
+}
+
+/* Submission text */
+.submission-item-text {
+  color: var(--text-primary, #ffffff);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Submission meta */
+.submission-item-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.meta-name {
+  font-size: 0.8rem;
+  color: var(--text-primary, #ffffff);
+  font-weight: 500;
+}
+
+.meta-role {
+  font-size: 0.75rem;
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.12);
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.meta-status {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 500;
+  background: rgba(100, 108, 255, 0.12);
+  color: #646cff;
+}
+
+.meta-date {
+  font-size: 0.75rem;
+  color: var(--text-muted, #71717a);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .submissions-page {
+    padding: 1rem;
+  }
+
+  .submissions-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .submissions-filters {
+    flex-direction: column;
+  }
+}

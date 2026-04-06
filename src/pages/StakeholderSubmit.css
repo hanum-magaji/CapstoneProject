@@ -1,0 +1,265 @@
+/* StakeholderSubmit Page — Unified Dark Theme */
+
+.submit-container {
+  min-height: 100vh;
+  background: var(--bg-primary, #0a0a12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background glow effect */
+.submit-container::before {
+  content: '';
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(100, 108, 255, 0.12), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Card */
+.submit-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: submitCardIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes submitCardIn {
+  from { opacity: 0; transform: translateY(30px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Loading */
+.submit-loading {
+  color: var(--text-secondary, #a1a1aa);
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Title */
+.submit-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  background: linear-gradient(135deg, #ffffff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+/* Description */
+.submit-description {
+  color: var(--text-secondary, #a1a1aa);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Domain badge */
+.submit-domain-badge {
+  display: inline-block;
+  margin: 0 auto 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: rgba(100, 108, 255, 0.12);
+  color: #646cff;
+  border: 1px solid rgba(100, 108, 255, 0.2);
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Divider */
+.submit-divider {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 1.5rem 0;
+}
+
+/* Subtitle */
+.submit-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary, #ffffff);
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+/* Body text */
+.submit-body {
+  color: var(--text-secondary, #a1a1aa);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Form */
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.submit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.submit-field label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary, #ffffff);
+}
+
+.submit-required {
+  color: #ef4444;
+}
+
+.submit-field input,
+.submit-field select,
+.submit-field textarea {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--bg-secondary, #12121a);
+  color: var(--text-primary, #ffffff);
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.submit-field input::placeholder,
+.submit-field textarea::placeholder {
+  color: var(--text-muted, #71717a);
+}
+
+.submit-field input:focus,
+.submit-field select:focus,
+.submit-field textarea:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.15);
+}
+
+.submit-field select {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23a1a1aa' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.submit-field select option {
+  background: #12121a;
+  color: #ffffff;
+}
+
+.submit-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-char-count {
+  font-size: 0.75rem;
+  color: var(--text-muted, #71717a);
+  text-align: right;
+}
+
+/* Error text */
+.submit-error-text {
+  color: #fca5a5;
+  font-size: 0.85rem;
+  text-align: center;
+  background: rgba(239, 68, 68, 0.08);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Submit button */
+.submit-btn {
+  background: linear-gradient(135deg, #646cff, #8b5cf6);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(100, 108, 255, 0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .submit-container {
+    padding: 1rem;
+  }
+
+  .submit-card {
+    padding: 1.75rem;
+  }
+
+  .submit-title {
+    font-size: 1.4rem;
+  }
+}

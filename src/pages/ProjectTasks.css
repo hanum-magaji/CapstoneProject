@@ -1,0 +1,143 @@
+/* ---- PAGE LAYOUT ---- */
+.tasks-page {
+  padding: 4rem 6vw;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  min-height: 100vh;
+}
+
+/* ---- ADD TASK FORM ---- */
+.add-task-container {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-task-container input[type="text"],
+.add-task-container textarea,
+.add-task-container select,
+.add-task-container input[type="date"] {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  resize: vertical;
+}
+
+.add-task-container .task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.add-task-container .primary-button {
+  margin-top: 1rem;
+  width: 150px;
+  align-self: flex-start;
+}
+
+/* ---- TASK LIST ---- */
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.task-card {
+  background: #1c1c1c;
+  padding: 1.6rem;
+  border-radius: 12px;
+  border: 1px solid #2d2d2d;
+  box-shadow: 0 0 12px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.task-description {
+  background: #121212;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  min-height: 60px;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.priority-badge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.p-1 { background: #e53935; }
+.p-2 { background: #ffb300; color: #000; }
+.p-3 { background: #43a047; }
+
+.due-date,
+.task-requirement {
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+.status-dropdown {
+  background: #222;
+  border: 1px solid #333;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-button {
+  background: #550000;
+  color: #ffbaba;
+  border: 1px solid #770000;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  max-width: 10%;
+}
+
+.delete-button:hover {
+  background: #770000;
+}
+.task-card.done {
+  opacity: 0.5;
+  background: #333; /* darker / faded */
+  border: 1px dashed #666;
+}
+.tsk-title {
+  font-size: 2rem;
+  font-weight: 700;
+}

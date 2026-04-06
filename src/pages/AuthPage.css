@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── Layout ── */
+.auth-container {
+  min-height: calc(100vh - 72px);
+  width: 100%;
+  background: #080810;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ── Card ── */
+.auth-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.8rem 2.4rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  animation: fadeUp 0.6s ease-out both;
+}
+
+/* ── Header ── */
+.auth-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.auth-logo span {
+  color: #6366f1;
+}
+
+.auth-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f0f0f8;
+  text-align: center;
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #7070a0;
+  font-size: 0.9rem;
+  margin: 0 0 2rem;
+}
+
+/* ── Form ── */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.auth-input {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #e5e5f0;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-input::placeholder {
+  color: #55557a;
+}
+
+.auth-input:focus {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+/* ── Button ── */
+.auth-button {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.9rem;
+  background: #6366f1;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-button:hover:not(:disabled) {
+  background: #5254cc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(99, 102, 241, 0.35);
+}
+
+.auth-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Switch ── */
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #6060a0;
+  font-size: 0.875rem;
+}
+
+.auth-switch span {
+  color: #818cf8;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-switch span:hover {
+  text-decoration: underline;
+}
+
+/* ── Animation ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Logout button (used elsewhere) ── */
+.logout-button {
+  background-color: transparent;
+  color: #e57373;
+  border: 1px solid rgba(229, 115, 115, 0.35);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: rgba(229, 115, 115, 0.1);
+  border-color: #e57373;
+}
